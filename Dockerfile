@@ -14,7 +14,7 @@ RUN mvn -q -DskipTests clean package spring-boot:repackage
 FROM eclipse-temurin:21-jre
 WORKDIR /app
 
-COPY --from=build /app/target/access-control-modules-0.0.1-SNAPSHOT.jar app.jar
+COPY --from=build /app/target/supera-0.0.1-SNAPSHOT.jar app.jar
 
 ENV SPRING_PROFILES_ACTIVE=docker
 
