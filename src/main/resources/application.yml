@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/access_db
+    username: access_user
+    password: secret
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+
+app:
+  jwt:
+    # chave de exemplo, substitua em prod
+    secret: YmVlbmRyZWFsdGVzdGUtamV0LXN1cGVyLXNlY3JldC1rZXktMzIy
+    expiration-seconds: 900
+
+logging:
+  level:
+    org.springframework.security: INFO

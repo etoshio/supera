@@ -26,6 +26,7 @@ docker-compose up --build
 
 - API estará exposta em: `http://localhost`
 - Swagger: `http://localhost/swagger-ui.html`
+- Script: rodar o script no banco de dados access_db: .\src\main\resources\data.sql
 
 ## Credenciais de teste
 
